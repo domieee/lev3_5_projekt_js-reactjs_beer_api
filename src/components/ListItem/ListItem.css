@@ -1,0 +1,56 @@
+.listItem {
+    border: 1px solid #400E32;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    margin-block: 20px;
+}
+
+.listItem > .img-container {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 200px;
+}
+
+.img-container > img {
+    margin-block: auto;
+    height: 150px;
+}
+
+.listItem-text {
+    width: 350px;
+}
+
+.listItem-text > h1 {
+    font-size: 1.3em;
+    color: #400E32;
+}
+
+.listItem-text > h2 {
+    font-size: 1em;
+    color: #F2CD5C;
+}
+
+.listItem-text > p {
+    font-size: 0.8em;
+    margin-block: 10px 5px;
+}
+
+.listItem-text > .details {
+    font-size: 1em;
+    padding: 3px 6px;
+    background-color: #F2CD5C;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.listItem-text > .details:hover {
+    color: #400E32;
+
+}

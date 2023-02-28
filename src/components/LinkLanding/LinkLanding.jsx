@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
+import './LinkLanding.css'
 
 const LinkLanding = (params) => {
 
     console.log(params);
     return ( 
-        <Link 
+        <Link
+        className='linkLanding' 
         to={params.refeer}>
             <img src={params.imgUrl} alt="" />
             <h2>{params.header}</h2>

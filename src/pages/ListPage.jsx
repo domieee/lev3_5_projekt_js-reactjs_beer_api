@@ -17,7 +17,6 @@ const ListPage = () => {
 
     return (
         <>
-            <h1>List Page</h1>
             {items.map((item, index) => {
                 return <ListItem 
                 key={index}

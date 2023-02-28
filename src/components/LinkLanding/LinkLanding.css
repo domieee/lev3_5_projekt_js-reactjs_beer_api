@@ -1,0 +1,24 @@
+.linkLanding {
+    text-decoration: none;
+}
+
+.linkLanding:hover > h2 {
+    color: #400E32
+}
+
+
+.linkLanding > img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.linkLanding > h2 {
+    font-size: 1.3em;
+    background-color: #F2921D;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.linkLanding > p {
+    color: #400E32;
+}

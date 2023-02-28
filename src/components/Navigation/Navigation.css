@@ -1,0 +1,22 @@
+@media ( min-width: 400px) {
+    .nav {
+        position: sticky;
+        display: flex;
+        justify-content: space-evenly;
+        margin-inline: auto;
+        width: 100%;
+        padding: 10px 10px
+    }
+
+    .navItem {
+        padding: 5px 10px;
+        background-color: #F2CD5C;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navItem:hover {
+        color: #400E32;
+    }
+}
