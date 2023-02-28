@@ -14,8 +14,10 @@ const ListItem = (item) => {
                     <h2>{item.tagline}</h2>
                     <p>Created by {item.name}</p>
                     <Link
-                    className='details'
-                    to={`/products/${item.id}`}>Details</Link>
+                        className='details'
+                        to={`/products/${item.id}`}>
+                        Details
+                    </Link>
                 </div>
             </article>
         </>

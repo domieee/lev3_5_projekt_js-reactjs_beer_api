@@ -25,6 +25,8 @@ const ProductPage = () => {
                     return data
                 })
         }
+    // ?  without `params.productId` in []: 
+    // ? Line 29:8:  React Hook useEffect has a missing dependency: 'params.productId'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
     }, [params.productId])
 
     console.log(state);
