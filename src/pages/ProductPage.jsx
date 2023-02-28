@@ -5,7 +5,6 @@ const ProductPage = () => {
 
     let params = useParams();
     const [state, setState] = useState([]);
-    console.log();
 
     useEffect(() => {
 
@@ -42,7 +41,6 @@ const ProductPage = () => {
                     <p>{state.attenuation_level}</p>
                 </div>
                 <p>{state.description}</p>
-                <FontAwesomeIcon icon="fa-sharp fa-solid fa-beer-mug" />
             </div>
         </>
     );
