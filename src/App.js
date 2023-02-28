@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import LandingPage from './pages/LandingPage';
 import ListPage from './pages/ListPage';
 import ProductPage from './pages/ProductPage';
+import NotFound from './pages/NotFound';
 import './App.css';
 
 function App() {

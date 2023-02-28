@@ -1,18 +1,29 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const ProductPage = () => {
 
     let params = useParams();
-    console.log(params);
+    const [state, setState] = useState([]);
+    console.log();
 
-    if (params.productId == 'random') {
-        fetch('https://ih-beers-api2.herokuapp.com/beers/random')
+    useEffect(()=>{
+        if (params.productId === 'random') {
+            fetch('https://ih-beers-api2.herokuapp.com/beers/random')
+                .then(res => res.json())
+                .then(data => {
+                    setState(data)
+                })
+        } else {
+            fetch(`https://ih-beers-api2.herokuapp.com/beers/${params.productId}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                setState(data)
             })
-    }
+        }
+    }, [])
 
+    console.log(state);
 
     return (
         <>
