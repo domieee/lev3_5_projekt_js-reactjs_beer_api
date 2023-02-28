@@ -7,7 +7,8 @@ const ProductPage = () => {
     const [state, setState] = useState([]);
     console.log();
 
-    useEffect(()=>{
+    useEffect(() => {
+
         if (params.productId === 'random') {
             fetch('https://ih-beers-api2.herokuapp.com/beers/random')
                 .then(res => res.json())
@@ -16,10 +17,10 @@ const ProductPage = () => {
                 })
         } else {
             fetch(`https://ih-beers-api2.herokuapp.com/beers/${params.productId}`)
-            .then(res => res.json())
-            .then(data => {
-                setState(data)
-            })
+                .then(res => res.json())
+                .then(data => {
+                    setState(data)
+                })
         }
     }, [])
 
@@ -27,7 +28,22 @@ const ProductPage = () => {
 
     return (
         <>
-            <h1>Product Page</h1>
+            <div>
+                <h1>Product Page</h1>
+                <img src={state.image_url} alt="" />
+                <h1>{state.name}</h1>
+                <p>{state.tagline}</p>
+                <div>
+                    <p>First Brewed</p>
+                    <p>{state.first_brewed}</p>
+                </div>
+                <div>
+                    <p>Attenuation Level</p>
+                    <p>{state.attenuation_level}</p>
+                </div>
+                <p>{state.description}</p>
+                <FontAwesomeIcon icon="fa-sharp fa-solid fa-beer-mug" />
+            </div>
         </>
     );
 }

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import beerSolo from '../../img/beer-solo.jpg'
 
 const LinkLanding = (params) => {
 

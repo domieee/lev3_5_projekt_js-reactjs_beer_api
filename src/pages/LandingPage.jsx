@@ -1,7 +1,4 @@
-import ListPage from "./ListPage";
 import LinkLanding from "../components/LinkLanding/LinkLanding.jsx";
-import ProductPage from "./ProductPage";
-
 
 const LandingPage = () => {
     return (
